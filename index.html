@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+    <h3>Find out all the pairs of the mathced cards!</h3> 
+    <p id="bestScore"></p>
+    <div id="yourScore"></div>
+    <div id="game">
+      <form action="">
+        <label for="cardNumber">Number of Cards </label>
+        <!-- <input type="number" id="cardNumber" value=10> -->
+        <select name="cardNumber" id="cardNumber">
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option> 
+          <option value="10" selected>10</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>       
+        </select>
+        <button id="cardNumberSelectBtn">OK</button>
+      </form>
+    </div>
+    <button id="startBtn"></button>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

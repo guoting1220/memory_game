@@ -1,0 +1,114 @@
+body {
+  background-color: #D8E0E7;
+}
+
+#game {
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid red;  */
+}
+
+#game div{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 8px;
+  width: 16%;
+  height: 200px;
+  margin: 2% 2%;    
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 2px #333030;
+ }
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+h3 {
+  text-align: center;
+  font-family: monospace;
+}
+
+form {
+  margin-left: 2%;
+  font-size: 25px;
+  border-radius: 2px;
+  font-family: cursive;
+  font-weight: bold;
+  /* border: 1px solid red; */
+}
+
+#cardNumber {
+  width: 60px;
+  height: 25px;
+  text-align: center;
+  outline: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#cardNumberSelectBtn {
+  width: 60px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #BEAC9C;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#cardNumberSelectBtn:hover {
+  background-color: #A49375;
+  cursor: pointer;
+}
+
+#startBtn {
+  display: block;
+  background-color: rgb(98, 185, 136);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  margin: auto;
+  height: 50px;
+  font-size: 25px;
+}
+
+.startBtn {
+  width: 100px;
+}
+
+.reStartBtn {
+  width: 150px;
+}
+
+#startBtn:hover{
+  background-color: seagreen;
+  cursor: pointer;
+}
+
+#bestScore {
+  text-align: center;
+  color: #3F8DE9;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  font-weight: bold;
+}
+
+#yourScore {
+  height: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #CE4420;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+
+
