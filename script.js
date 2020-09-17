@@ -161,9 +161,7 @@ function handleCardClick(event) {
   //if two cards are flipped at this time, return  
   if (twoCardsFlipped) return;
 
-  //start a new matching
-  score++; //score increaes only when the click is valid
-  yourScore.innerText = `Your clicks: ${score}`;
+  if (event.target.classList.contains('completed')) return;
 
   if (score === 1) {
     startBtn.innerText = "RESTART";
@@ -176,6 +174,8 @@ function handleCardClick(event) {
     card1 = event.target;
     card1Color = event.target.className;
     event.target.style.backgroundColor = card1Color;
+    score++; //score increaes only when the click is valid
+    yourScore.innerText = `Your clicks: ${score}`;
   }
 
   // flip card2
@@ -187,6 +187,8 @@ function handleCardClick(event) {
 
     card2Color = event.target.className;
     event.target.style.backgroundColor = card2Color;
+    score++; //score increaes only when the click is valid
+    yourScore.innerText = `Your clicks: ${score}`;
 
     //if colors not matched, flip card1 and card2 over after 1 second
     if (card1Color !== card2Color) {
@@ -200,6 +202,8 @@ function handleCardClick(event) {
     //if colors matched, increase the matched pairs number by 1 
     //if all matched, game over
     else {
+      card1.classList.add('completed');
+      event.target.classList.add('completed');
       twoCardsFlipped = false;
       matchedPairs++;
       if (matchedPairs === shuffledColors.length / 2) {
